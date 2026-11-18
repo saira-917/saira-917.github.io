@@ -14,7 +14,7 @@ export const siteData = {
 
   // ── Social links (update hrefs with your real URLs) ───────────────────────
   socials: [
-    { label: 'LinkedIn', href: '#' /* TODO: add your LinkedIn URL */ },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/sairachowdhury' },
     { label: 'GitHub',   href: 'https://github.com/saira-917' },
     { label: 'Email',    href: 'mailto:chowdhurysaira4@gmail.com' },
   ],
