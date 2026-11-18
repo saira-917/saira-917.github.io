@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f2dde1"/>
+  <!-- Mesh network nodes -->
+  <line x1="200" y1="60"  x2="100" y2="150" stroke="#877369" stroke-width="1" opacity="0.4"/>
+  <line x1="200" y1="60"  x2="300" y2="150" stroke="#877369" stroke-width="1" opacity="0.4"/>
+  <line x1="100" y1="150" x2="200" y2="240" stroke="#877369" stroke-width="1" opacity="0.4"/>
+  <line x1="300" y1="150" x2="200" y2="240" stroke="#877369" stroke-width="1" opacity="0.4"/>
+  <line x1="100" y1="150" x2="300" y2="150" stroke="#877369" stroke-width="1" opacity="0.3"/>
+  <line x1="200" y1="60"  x2="200" y2="240" stroke="#877369" stroke-width="1" opacity="0.2"/>
+  <!-- Outer nodes -->
+  <line x1="60"  y1="80"  x2="200" y2="60"  stroke="#dac2b6" stroke-width="0.8" opacity="0.5"/>
+  <line x1="340" y1="80"  x2="200" y2="60"  stroke="#dac2b6" stroke-width="0.8" opacity="0.5"/>
+  <line x1="40"  y1="200" x2="100" y2="150" stroke="#dac2b6" stroke-width="0.8" opacity="0.5"/>
+  <line x1="360" y1="200" x2="300" y2="150" stroke="#dac2b6" stroke-width="0.8" opacity="0.5"/>
+  <!-- Node circles -->
+  <circle cx="200" cy="60"  r="10" fill="#ffffff" stroke="#dac2b6" stroke-width="1.5"/>
+  <circle cx="100" cy="150" r="10" fill="#ffffff" stroke="#dac2b6" stroke-width="1.5"/>
+  <circle cx="300" cy="150" r="10" fill="#ffffff" stroke="#dac2b6" stroke-width="1.5"/>
+  <circle cx="200" cy="240" r="10" fill="#fecbcb" stroke="#ecbaba" stroke-width="1.5"/>
+  <circle cx="60"  cy="80"  r="6"  fill="#f2dde1" stroke="#dac2b6" stroke-width="1"/>
+  <circle cx="340" cy="80"  r="6"  fill="#f2dde1" stroke="#dac2b6" stroke-width="1"/>
+  <circle cx="40"  cy="200" r="6"  fill="#f2dde1" stroke="#dac2b6" stroke-width="1"/>
+  <circle cx="360" cy="200" r="6"  fill="#f2dde1" stroke="#dac2b6" stroke-width="1"/>
+  <text x="200" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#877369" opacity="0.7" letter-spacing="2">[ Project photo ]</text>
+</svg>

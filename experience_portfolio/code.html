@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Experience - Elara</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#e9caa0",
+                        "tertiary-container": "#6b5433",
+                        "outline": "#877369",
+                        "inverse-primary": "#ffb68c",
+                        "on-background": "#24191c",
+                        "secondary": "#7b5455",
+                        "background": "#fff8f8",
+                        "tertiary-fixed": "#feddb3",
+                        "secondary-fixed": "#ffdad9",
+                        "inverse-surface": "#3a2d30",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#e1c299",
+                        "surface-container-highest": "#f2dde1",
+                        "on-tertiary-fixed-variant": "#584324",
+                        "on-surface-variant": "#54433a",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#f2dde1",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#fee9ed",
+                        "primary-container": "#8b4513",
+                        "surface-bright": "#fff8f8",
+                        "on-secondary-fixed-variant": "#613d3e",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fecbcb",
+                        "surface-container-high": "#f8e3e7",
+                        "inverse-on-surface": "#ffecef",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#ffc29f",
+                        "on-secondary-container": "#7a5354",
+                        "on-secondary-fixed": "#2f1314",
+                        "surface-container-low": "#fff0f2",
+                        "surface": "#fff8f8",
+                        "secondary-fixed-dim": "#ecbaba",
+                        "primary-fixed": "#ffdbc9",
+                        "primary": "#6c2f00",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#ffb68c",
+                        "on-primary-fixed": "#321200",
+                        "tertiary": "#523d1e",
+                        "surface-tint": "#934b19",
+                        "on-surface": "#24191c",
+                        "surface-dim": "#e9d5d9",
+                        "on-tertiary-fixed": "#281801",
+                        "outline-variant": "#dac2b6",
+                        "on-primary-fixed-variant": "#753401"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-md": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glow-shadow {
+            box-shadow: 0 10px 40px rgba(139, 69, 19, 0.04);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="w-full sticky top-0 border-b border-outline/10 bg-background/80 backdrop-blur-md z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto">
+<button class="text-primary hover:text-primary transition-colors duration-300 md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg tracking-widest text-primary dark:text-on-background">
+                ELARA
+            </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#">Story</a>
+<a class="text-primary font-bold border-b border-primary font-label-md text-label-md hover:text-primary transition-colors duration-300 opacity-70 transition-opacity" href="#">Path</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#">Works</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#">Connect</a>
+</nav>
+<button class="text-primary hover:text-primary transition-colors duration-300">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pb-32">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-24 pb-16">
+<div class="max-w-3xl">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Experience</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">A timeline of technical rigor and intentional leadership. Blending engineering precision with thoughtful design.</p>
+</div>
+</section>
+<!-- Technical Experience -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16">
+<h2 class="font-headline-md text-headline-md text-secondary mb-12 border-b border-outline/10 pb-4">Technical Experience</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Experience Card 1 -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant/20 rounded-xl p-8 glow-shadow mb-8 md:mb-0">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Hardware Engineering Intern</h3>
+<p class="font-label-md text-label-md text-tertiary uppercase tracking-widest">NovaTech Labs</p>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm">Summer 2023</span>
+</div>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3 border-b border-outline/10 pb-4 last:border-0 last:pb-0">
+<span class="material-symbols-outlined text-outline mt-1 text-[20px]">memory</span>
+<span>Designed and tested PCB layouts for next-generation wearable health monitors, optimizing for minimal power consumption and thermal efficiency.</span>
+</li>
+<li class="flex items-start gap-3 border-b border-outline/10 pb-4 last:border-0 last:pb-0">
+<span class="material-symbols-outlined text-outline mt-1 text-[20px]">code</span>
+<span>Developed automated validation scripts in Python, reducing testing time by 30% and ensuring consistent quality assurance across prototypes.</span>
+</li>
+</ul>
+</div>
+<!-- Lab Image Placeholder -->
+<div class="md:col-span-4 rounded-xl overflow-hidden bg-surface-variant/50 relative min-h-[300px]">
+<img alt="Lab equipment" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply" data-alt="A macro shot of intricate circuit boards and technical hardware components resting on a clean, white laboratory workbench. The lighting is bright and diffused, creating a serene, professional atmosphere typical of a high-end engineering lab. The color palette focuses on soft silvers, clinical whites, and subtle accents of warm taupe, reflecting a minimalist and meticulous aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj36ihkkdwIv9Uk0FcoHev1OqdXkpHIFNW4DFU9GzsLE2KxA_6pLN4dyTsuG2bY84rlHeO_yt3PxIqePBOexhabkZzk_6wdauJxH7H0DToqTNo3QRAIE0DekEcz4KUPOgn-JUio3poMGfiJTk_axbjycVKqhQE9MATNTmKUSkTd3qreJulkgYlZCnO3069_ZEZMpxUdEoyHjzZVb_f6Q4_GQSN78YmcBLrPkuzDac73Z8Uau_mIMbEcsw55D4gaU_FPabmChvqNTw"/>
+</div>
+<!-- Experience Card 2 -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant/20 rounded-xl p-8 glow-shadow mt-gutter">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Undergraduate Researcher</h3>
+<p class="font-label-md text-label-md text-tertiary uppercase tracking-widest">Advanced Materials Lab</p>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm">2022 - 2023</span>
+</div>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3 border-b border-outline/10 pb-4 last:border-0 last:pb-0">
+<span class="material-symbols-outlined text-outline mt-1 text-[20px]">science</span>
+<span>Conducted extensive material characterization using scanning electron microscopy (SEM) to analyze the micro-structure of novel biodegradable polymers.</span>
+</li>
+<li class="flex items-start gap-3 border-b border-outline/10 pb-4 last:border-0 last:pb-0">
+<span class="material-symbols-outlined text-outline mt-1 text-[20px]">analytics</span>
+<span>Compiled and presented findings at the regional undergraduate research symposium, emphasizing sustainable engineering applications.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Non-Technical Experience -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 bg-surface-container-low/50">
+<h2 class="font-headline-md text-headline-md text-secondary mb-12 border-b border-outline/10 pb-4">Leadership &amp; Service</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Leadership Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/20 rounded-xl p-8 glow-shadow">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-sm text-headline-sm text-primary">President</h3>
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">groups</span>
+</div>
+<p class="font-label-md text-label-md text-tertiary uppercase tracking-widest mb-4">Women in Engineering Chapter</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Directed a 50+ member organization, coordinating professional development workshops and mentorship programs. Increased active membership by 40% through targeted outreach initiatives and community building events.</p>
+</div>
+<!-- Leadership Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/20 rounded-xl p-8 glow-shadow">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-sm text-headline-sm text-primary">Design Director</h3>
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">draw</span>
+</div>
+<p class="font-label-md text-label-md text-tertiary uppercase tracking-widest mb-4">University TEDx</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Led the creative vision for the annual conference, overseeing a team of designers to produce marketing materials, stage design, and digital assets that maintained cohesive, premium brand standards.</p>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 text-center">
+<a class="inline-flex items-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest hover:scale-105 transition-transform duration-300" href="#">
+                Next: See My Projects
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline/10 flex flex-col items-center gap-8 px-margin-desktop text-center">
+<div class="font-display-lg text-display-lg-mobile md:text-display-lg text-secondary-fixed-dim">
+            ELARA
+        </div>
+<div class="flex gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant/80 hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20" href="#">Instagram</a>
+<a class="font-label-md text-label-md text-on-surface-variant/80 hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20" href="#">LinkedIn</a>
+<a class="font-label-md text-label-md text-on-surface-variant/80 hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20" href="#">Email</a>
+<a class="font-label-md text-label-md text-on-surface-variant/80 hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20" href="#">Behance</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant/80 mt-4">
+            © 2024 ELARA STUDIOS. CRAFTED WITH INTENTION.
+        </p>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-xl bg-background/90 dark:bg-surface-dim/90 backdrop-blur-xl border-t border-outline/5 shadow-sm shadow-primary/5">
+<div class="flex justify-around items-center h-16 px-margin-mobile">
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary" href="#">
+<span class="material-symbols-outlined text-[24px]">auto_stories</span>
+<span class="font-label-sm text-label-sm">Story</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary font-bold translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">timeline</span>
+<span class="font-label-sm text-label-sm">Path</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary" href="#">
+<span class="material-symbols-outlined text-[24px]">folder_special</span>
+<span class="font-label-sm text-label-sm">Works</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary" href="#">
+<span class="material-symbols-outlined text-[24px]">chat_bubble</span>
+<span class="font-label-sm text-label-sm">Connect</span>
+</a>
+</div>
+</nav>
+</body></html>

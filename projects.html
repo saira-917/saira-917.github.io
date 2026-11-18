@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Saira Chowdhury</title>
+  <meta name="description" content="Engineering projects by Saira Chowdhury — embedded systems, hardware, and software." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body data-page="projects" class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+
+  <!-- ═══════════════════════════════════════════════════
+       PROJECTS PAGE MAIN CONTENT
+       Header + footer injected by src/layout.js
+  ════════════════════════════════════════════════════ -->
+  <main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
+
+    <!-- ── Page header ────────────────────────────────────── -->
+    <div class="mb-12 md:mb-20 text-center md:text-left">
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">Curated Works</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        A selection of engineering projects built for precision, performance, and scalable
+        architecture — from embedded firmware to full-stack data pipelines.
+      </p>
+    </div>
+
+    <!-- ── Project Bento Grid ──────────────────────────────── -->
+    <!--
+      Layout pattern: alternating 8+4 / 4+8 column spans on desktop.
+      PLACEHOLDER instructions:
+        - Replace each [Project Name], [tech tags], and description with your real projects.
+        - Replace each image src with a real screenshot or photo in /images/.
+        - Replace href="#" on "View Project" links with your GitHub URL or project page.
+        - Add or remove <article> blocks to match your number of projects.
+    -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
+
+      <!-- ── Project 1 (wide — 8 cols): Depop Resale Pipeline ── -->
+      <article class="col-span-1 md:col-span-8 bg-surface-container-lowest rounded-xl border border-surface-variant glow-shadow overflow-hidden group hover:-translate-y-1 transition-transform duration-300 flex flex-col md:flex-row">
+        <div class="h-64 md:h-auto md:w-1/2 relative bg-surface-container-high overflow-hidden">
+          <img
+            alt="Data pipeline dashboard visualizing scraped resale listings"
+            class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500"
+            src="/images/project-1.svg"
+          />
+        </div>
+        <div class="p-8 md:p-10 md:w-1/2 flex flex-col justify-center">
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="inline-block px-3 py-1 bg-secondary-container text-primary font-label-sm text-label-sm rounded-full uppercase tracking-widest">Python</span>
+            <span class="inline-block px-3 py-1 bg-secondary-container text-primary font-label-sm text-label-sm rounded-full uppercase tracking-widest">OCR</span>
+            <span class="inline-block px-3 py-1 bg-secondary-container text-primary font-label-sm text-label-sm rounded-full uppercase tracking-widest">Web Scraping</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md text-primary mb-4">Depop Resale Price &amp; Brand Intelligence Pipeline</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+            Built an end-to-end data pipeline that scraped, consolidated, and structured
+            ~788 secondhand clothing listings across brand, size, price, and images —
+            engineering a workaround for Cloudflare bot-detection that recovered complete
+            photo galleries for 79% of listings, redesigning the parser to eliminate
+            cross-contamination between listings, and adding a local OCR pipeline (EasyOCR)
+            to recover missing brand labels via fuzzy-matching.
+          </p>
+          <a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:tracking-wider transition-all duration-300 w-max uppercase" href="https://github.com/saira-917" target="_blank" rel="noopener">
+            View Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ── Project 2 (narrow — 4 cols): FP-Growth ── -->
+      <article class="col-span-1 md:col-span-4 bg-surface-container-lowest rounded-xl border border-surface-variant glow-shadow overflow-hidden group hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+        <div class="h-48 relative bg-surface-container-high overflow-hidden">
+          <img
+            alt="Tree-structure diagram representing frequent itemset mining"
+            class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-70 group-hover:scale-105 transition-transform duration-500"
+            src="/images/project-2.svg"
+          />
+        </div>
+        <div class="p-8 flex-1 flex flex-col">
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="inline-block px-3 py-1 bg-secondary-container text-primary font-label-sm text-label-sm rounded-full uppercase tracking-widest">Python</span>
+            <span class="inline-block px-3 py-1 bg-secondary-container text-primary font-label-sm text-label-sm rounded-full uppercase tracking-widest">Data Structures</span>
+          </div>
+          <h2 class="font-headline-sm text-headline-sm text-primary mb-3">FP-Growth Algorithm Implementation</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
+            Optimized frequent itemset mining performance using tree-based data structures,
+            improving runtime, scalability, and memory overhead on large transactional datasets.
+          </p>
+          <a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:tracking-wider transition-all duration-300 w-max uppercase" href="https://github.com/saira-917" target="_blank" rel="noopener">
+            View Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ── Project 3 (wide — 12 cols): Microcontroller Systems ── -->
+      <article class="col-span-1 md:col-span-12 bg-surface-container-lowest rounded-xl border border-surface-variant glow-shadow overflow-hidden group hover:-translate-y-1 transition-transform duration-300 flex flex-col md:flex-row-reverse">
+        <div class="h-64 md:h-auto md:w-1/3 relative bg-surface-container-high overflow-hidden">
+          <img
+            alt="Embedded microcontroller board with peripheral connections"
+            class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500"
+            src="/images/project-3.svg"
+          />
+        </div>
+        <div class="p-8 md:p-10 md:w-2/3 flex flex-col justify-center">
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="inline-block px-3 py-1 bg-secondary-container text-primary font-label-sm text-label-sm rounded-full uppercase tracking-widest">C</span>
+            <span class="inline-block px-3 py-1 bg-secondary-container text-primary font-label-sm text-label-sm rounded-full uppercase tracking-widest">Embedded Systems</span>
+          </div>
+          <h2 class="font-headline-sm text-headline-sm text-primary mb-3">Microcontroller Systems Programming</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+            Built a real-time embedded system through Assembly-based microcontroller
+            programming using USART and peripherals, with hardware-software interfacing
+            on AVR microcontrollers for stable runtime performance.
+          </p>
+          <a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:tracking-wider transition-all duration-300 w-max uppercase" href="https://github.com/saira-917" target="_blank" rel="noopener">
+            View Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ── CTA ──────────────────────────────────────────────── -->
+    <div class="mt-20 flex justify-center">
+      <a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full uppercase tracking-widest hover:scale-105 transition-transform duration-300 glow-shadow" href="/contact.html">
+        Next: Get in Touch
+      </a>
+    </div>
+
+  </main>
+
+</body>
+</html>

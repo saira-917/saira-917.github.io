@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ELARA - Projects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#e9caa0",
+                      "tertiary-container": "#6b5433",
+                      "outline": "#877369",
+                      "inverse-primary": "#ffb68c",
+                      "on-background": "#24191c",
+                      "secondary": "#7b5455",
+                      "background": "#fff8f8",
+                      "tertiary-fixed": "#feddb3",
+                      "secondary-fixed": "#ffdad9",
+                      "inverse-surface": "#3a2d30",
+                      "error-container": "#ffdad6",
+                      "on-primary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#e1c299",
+                      "surface-container-highest": "#f2dde1",
+                      "on-tertiary-fixed-variant": "#584324",
+                      "on-surface-variant": "#54433a",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#f2dde1",
+                      "on-error-container": "#93000a",
+                      "surface-container": "#fee9ed",
+                      "primary-container": "#8b4513",
+                      "surface-bright": "#fff8f8",
+                      "on-secondary-fixed-variant": "#613d3e",
+                      "on-tertiary": "#ffffff",
+                      "secondary-container": "#fecbcb",
+                      "surface-container-high": "#f8e3e7",
+                      "inverse-on-surface": "#ffecef",
+                      "error": "#ba1a1a",
+                      "on-primary-container": "#ffc29f",
+                      "on-secondary-container": "#7a5354",
+                      "on-secondary-fixed": "#2f1314",
+                      "surface-container-low": "#fff0f2",
+                      "surface": "#fff8f8",
+                      "secondary-fixed-dim": "#ecbaba",
+                      "primary-fixed": "#ffdbc9",
+                      "primary": "#6c2f00",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed-dim": "#ffb68c",
+                      "on-primary-fixed": "#321200",
+                      "tertiary": "#523d1e",
+                      "surface-tint": "#934b19",
+                      "on-surface": "#24191c",
+                      "surface-dim": "#e9d5d9",
+                      "on-tertiary-fixed": "#281801",
+                      "outline-variant": "#dac2b6",
+                      "on-primary-fixed-variant": "#753401"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "margin-mobile": "20px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "label-sm": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glow-shadow {
+            box-shadow: 0 10px 40px -10px rgba(139, 69, 19, 0.04);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="w-full sticky top-0 bg-background/80 backdrop-blur-md border-b border-outline/10 z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto h-16">
+<button class="text-primary hover:text-primary/70 transition-colors duration-300 flex items-center justify-center p-2 rounded-full focus:ring-1 focus:ring-primary/20">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+<div class="font-display-lg text-display-lg-mobile md:font-display-lg md:text-display-lg tracking-widest text-primary">ELARA</div>
+<button class="text-primary hover:text-primary/70 transition-colors duration-300 flex items-center justify-center p-2 rounded-full focus:ring-1 focus:ring-primary/20">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
+<!-- Header Section -->
+<section class="mb-16 md:mb-24 text-center">
+<h1 class="font-display-lg text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-4">Curated Works</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">A selection of recent engineering endeavors, exploring the intersection of precise hardware architecture and elegant system design.</p>
+</section>
+<!-- Projects Grid (Bento/Asymmetric style) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-24">
+<!-- Project 1 (Large Span) -->
+<article class="col-span-1 md:col-span-8 bg-surface-container-lowest rounded-xl border border-outline/20 glow-shadow overflow-hidden group hover:shadow-primary/5 transition-all duration-500">
+<div class="aspect-[16/9] w-full bg-surface-container overflow-hidden relative">
+<img alt="Hardware Project" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A close up, highly detailed macro photograph of a custom designed printed circuit board (PCB). The board is a sleek matte black with intricate gold traces and precision soldered surface mount components. The lighting is soft and directional, highlighting the metallic textures and creating a clean, high-end technical aesthetic. The overall mood is sophisticated engineering within a soft, minimalist environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9yF6WMTR6ngtZ5nTuXi_Q1F5XkOKCX7eQqbuB6hGSVv3KHE1k6qL_A_HV1u8PmKLaM9sQZyzfsHytHb-W3FEVU5x4kBWqm0gSHYuM9z5x9-plWgAy-V-RCBGu0x1DMfrt9Sbf_Ulg6dg-sCR9qw-S8JZUeA9iUWzice-OmW8FQMHcjRe9qXA4odiEjdiJK5bioWLQevPal-dWpNHm-VdqokPTihZ_9iyP3zYs8Z4AuKp0wg-wC0CT16N4JKWRvMGHOzGldnm9Imo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="p-8">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-full tracking-wider uppercase">Embedded C</span>
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-full tracking-wider uppercase">ARM Cortex-M4</span>
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-full tracking-wider uppercase">Custom PCB</span>
+</div>
+<h2 class="font-headline-md text-headline-sm md:text-headline-md text-primary mb-3">Project Aether</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">A high-fidelity sensory acquisition node designed for harsh industrial environments. Features a custom-designed 4-layer PCB with isolated analog front-ends and low-power RF telemetry.</p>
+</div>
+</article>
+<!-- Project 2 (Small Span) -->
+<article class="col-span-1 md:col-span-4 bg-surface-container-lowest rounded-xl border border-outline/20 glow-shadow overflow-hidden group hover:shadow-primary/5 transition-all duration-500 flex flex-col">
+<div class="aspect-square w-full bg-surface-container overflow-hidden relative">
+<img alt="Electronics" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="An elegantly arranged collection of electronic components, wires, and microcontrollers on a soft cream workspace. The composition is flat-lay style, organized with editorial precision. Soft, diffused natural light casts gentle shadows, emphasizing a clean, modern aesthetic. The color palette features whites, creams, soft grays, and the subtle metallic sheen of the hardware." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGGYogebRTelKDUXq0rSJALTL4HyzKJuyV3qyr53-YtUwJD3OF-K24dAtOGGwxt4kMKDoO5rs7AVaboh4QRPl1zbUKLVFlODRTmJuzd3rhNI-SSv-KtTlF5rJY8fqVchbeU6-llDxX23crWHSPPvOPN486YPxw-ep3678RgrfP0MHdTtnY2MFZ3SRU2qxBHpta00XeibBYhWMw61jJrPxSvc9EhcroRxJiADjKYzHyQBzwLcY8qZmNXBRx2iNI23StN6zY8SmaY80"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-full tracking-wider uppercase">FPGA</span>
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-full tracking-wider uppercase">Verilog</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-3">Signal Synthesizer</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Low-latency digital signal processing unit built on a custom FPGA fabric for real-time audio manipulation.</p>
+</div>
+</div>
+</article>
+<!-- Project 3 (Small Span) -->
+<article class="col-span-1 md:col-span-5 bg-surface-container-lowest rounded-xl border border-outline/20 glow-shadow overflow-hidden group hover:shadow-primary/5 transition-all duration-500 flex flex-col">
+<div class="aspect-[4/3] w-full bg-surface-container overflow-hidden relative">
+<img alt="Hardware Setup" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A clean, minimalist desk setup featuring a modern oscilloscope, a sleek laptop, and various custom hardware prototypes. The lighting is bright and airy, reminiscent of a high-end design studio rather than a traditional engineering lab. Soft pink and taupe accents subtly complement the silver and black technical equipment. The scene feels organized, intentional, and luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZr3u7WXoPcWnNFeHcwpAzz2lskJ9HTa7FPS3tbKLPA0z60shlk_4zjgWjSZPJgAh5ILGRdDAmicliMG5Rbvlcvm_Gic2daX3H0RljyljwKYNEizKlL5SDNmhTq3SEe4NPlf5p7qMv8QPB3BgDctVy1OCGuWSKHH29DkmN_CNfFxIpNBfK5tR7bnatS6vFpVDrU8g_6xTp3x_MBVDyZLEoRJ1i0MIaDcqOOWu9YZAKZ4eW_q9LMPcQB4odX63gfDPViasiq4nGE6w"/>
+</div>
+<div class="p-8 flex-grow">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-full tracking-wider uppercase">Python</span>
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-full tracking-wider uppercase">IoT</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-3">Mesh Network Protocol</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">A lightweight, energy-efficient routing protocol implemented across a heterogeneous fleet of environmental sensors.</p>
+</div>
+</article>
+<!-- Project 4 (Medium Span) -->
+<article class="col-span-1 md:col-span-7 bg-surface-container-lowest rounded-xl border border-outline/20 glow-shadow overflow-hidden group hover:shadow-primary/5 transition-all duration-500">
+<div class="aspect-[21/9] w-full bg-surface-container overflow-hidden relative">
+<img alt="Robotics Assembly" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A close-up view of precision robotic joints and machined aluminum parts resting on a pristine white surface. The image emphasizes the beautiful geometric shapes and flawless finish of the mechanical engineering components. High-key lighting eliminates harsh shadows, creating a soft, clinical yet elegant aesthetic. The focus is on the interplay of light and metallic textures in a minimalist setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVKQbyOlyrCdAmhs54YmWf2V5qGME6rv4YN6Zt6iV9nusBqnwby1lOi9o7JRBDsgv7RSSuqpFJ9ulYWCzApokd3d3jMYt8yuc-gdenD34gafAErNWihHm6SXAs2fXT_audNnM-QkpoBazrD1aLK2Ptwdu2VBtEiyMf0lkFVqu5_tSa4u7tCfnKEoO9uMBQarP3opeMPDKoz7_nxVnoZLo6TPWdRdu2OK2TJwDZ4Pp66joQBsEtQoM0VOzb3xQblkfqnqoiX1t5-ik"/>
+</div>
+<div class="p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+<div class="flex-grow">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-full tracking-wider uppercase">C++</span>
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-full tracking-wider uppercase">Kinematics</span>
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-full tracking-wider uppercase">RTOS</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-3">Articulated Arm Controller</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Firmware architecture for a 6-DOF robotic manipulator, ensuring microsecond-level synchronization across distributed motor controllers.</p>
+</div>
+</div>
+</article>
+</section>
+<!-- Next Action -->
+<section class="flex justify-center mb-16">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md uppercase px-8 py-4 rounded-full tracking-widest hover:scale-[1.02] transition-transform duration-300" href="#">
+                Next: Get in Touch
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-surface-container-lowest border-t border-outline/10 text-center flex flex-col items-center gap-8 px-margin-mobile md:px-margin-desktop mt-auto">
+<div class="font-display-lg text-display-lg-mobile md:font-display-lg md:text-display-lg text-secondary-fixed-dim">ELARA</div>
+<nav class="flex flex-wrap justify-center gap-6 md:gap-12">
+<a class="text-on-surface-variant/80 font-label-md text-label-md hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20 rounded px-2 py-1" href="#">Instagram</a>
+<a class="text-on-surface-variant/80 font-label-md text-label-md hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20 rounded px-2 py-1" href="#">LinkedIn</a>
+<a class="text-on-surface-variant/80 font-label-md text-label-md hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20 rounded px-2 py-1" href="#">Email</a>
+<a class="text-on-surface-variant/80 font-label-md text-label-md hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20 rounded px-2 py-1" href="#">Behance</a>
+</nav>
+<div class="font-body-md text-body-md text-on-surface-variant/60 mt-4 uppercase tracking-widest text-sm">
+            © 2024 ELARA STUDIOS. CRAFTED WITH INTENTION.
+        </div>
+</footer>
+</body></html>

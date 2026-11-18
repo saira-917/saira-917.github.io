@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elara | Computer Engineering</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-tertiary-container": "#e9caa0",
+                            "tertiary-container": "#6b5433",
+                            "outline": "#877369",
+                            "inverse-primary": "#ffb68c",
+                            "on-background": "#24191c",
+                            "secondary": "#7b5455",
+                            "background": "#fff8f8",
+                            "tertiary-fixed": "#feddb3",
+                            "secondary-fixed": "#ffdad9",
+                            "inverse-surface": "#3a2d30",
+                            "error-container": "#ffdad6",
+                            "on-primary": "#ffffff",
+                            "surface-container-lowest": "#ffffff",
+                            "tertiary-fixed-dim": "#e1c299",
+                            "surface-container-highest": "#f2dde1",
+                            "on-tertiary-fixed-variant": "#584324",
+                            "on-surface-variant": "#54433a",
+                            "on-error": "#ffffff",
+                            "surface-variant": "#f2dde1",
+                            "on-error-container": "#93000a",
+                            "surface-container": "#fee9ed",
+                            "primary-container": "#8b4513",
+                            "surface-bright": "#fff8f8",
+                            "on-secondary-fixed-variant": "#613d3e",
+                            "on-tertiary": "#ffffff",
+                            "secondary-container": "#fecbcb",
+                            "surface-container-high": "#f8e3e7",
+                            "inverse-on-surface": "#ffecef",
+                            "error": "#ba1a1a",
+                            "on-primary-container": "#ffc29f",
+                            "on-secondary-container": "#7a5354",
+                            "on-secondary-fixed": "#2f1314",
+                            "surface-container-low": "#fff0f2",
+                            "surface": "#fff8f8",
+                            "secondary-fixed-dim": "#ecbaba",
+                            "primary-fixed": "#ffdbc9",
+                            "primary": "#6c2f00",
+                            "on-secondary": "#ffffff",
+                            "primary-fixed-dim": "#ffb68c",
+                            "on-primary-fixed": "#321200",
+                            "tertiary": "#523d1e",
+                            "surface-tint": "#934b19",
+                            "on-surface": "#24191c",
+                            "surface-dim": "#e9d5d9",
+                            "on-tertiary-fixed": "#281801",
+                            "outline-variant": "#dac2b6",
+                            "on-primary-fixed-variant": "#753401"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "unit": "8px",
+                            "margin-desktop": "64px",
+                            "gutter": "24px",
+                            "margin-mobile": "20px",
+                            "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                            "label-sm": ["Hanken Grotesk"],
+                            "body-lg": ["Hanken Grotesk"],
+                            "display-lg": ["Playfair Display"],
+                            "body-md": ["Hanken Grotesk"],
+                            "label-md": ["Hanken Grotesk"],
+                            "display-lg-mobile": ["Playfair Display"],
+                            "headline-sm": ["Playfair Display"],
+                            "headline-md": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                            "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                            "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                            "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                            "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                            "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                            "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glow-shadow {
+            box-shadow: 0 10px 40px -10px rgba(139, 69, 19, 0.04);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<header class="w-full sticky top-0 border-b border-outline/10 bg-background/80 backdrop-blur-md z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto h-16">
+<button aria-label="Menu" class="text-primary dark:text-inverse-primary hover:text-primary transition-colors duration-300 opacity-70 transition-opacity flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-container-high">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg tracking-widest text-primary dark:text-on-background uppercase no-underline" href="#">
+                ELARA
+            </a>
+<button aria-label="Shopping Bag" class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300 flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-container-high">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_bag</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col">
+<!-- Minimalist Hero Section -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20 md:py-32 flex flex-col items-center justify-center text-center min-h-[707px]">
+<!-- Pill Label -->
+<div class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm uppercase tracking-widest mb-8 border border-outline/10">
+                Stony Brook University
+            </div>
+<!-- Headline -->
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface max-w-4xl mb-6">
+                Crafting the Future of Engineering
+            </h1>
+<!-- Subtext -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
+                Computer Engineering Senior dedicated to bridging the gap between elegant design aesthetics and robust technical architecture. Exploring the intersection of hardware logic and software fluidity.
+            </p>
+<!-- Primary CTA -->
+<a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary font-label-md text-label-md rounded-full uppercase tracking-widest hover:scale-105 transition-transform duration-300 ease-in-out" href="#experience">
+                Begin the Journey
+            </a>
+<!-- Placeholder for Professional Photo (Minimalist execution) -->
+<div class="mt-24 w-full max-w-3xl aspect-[16/9] md:aspect-[21/9] bg-surface-container-lowest border border-surface-container-high rounded-xl glow-shadow overflow-hidden relative group cursor-pointer">
+<div class="absolute inset-0 flex items-center justify-center bg-surface-variant/30 group-hover:bg-transparent transition-colors duration-500 z-10">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest opacity-60 group-hover:opacity-0 transition-opacity duration-300">Portrait Canvas</span>
+</div>
+<img alt="Workspace" class="w-full h-full object-cover object-center opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out filter grayscale mix-blend-multiply" data-alt="A meticulously curated workspace featuring a sleek laptop, engineering schematics, and minimal botanical elements in a bright, soft pink and warm brown color palette. The scene embodies a clean-girl, high-end editorial aesthetic with precise composition and soft, diffused natural lighting. The mood is calm, intellectual, and intentionally designed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAil6PkgG9Y_4x5Nes8-bkCLAsJbeaBf7WxHSpT-pGD3vrhHe2G90qtrjZtuE0sVlIYrJ_k454Hi9TifzonVqWZFXI6ezdSP_XVaC4h49jMIvoC9sP12UNEn2HI-782VZGRFZIWCz6fYlAky4cPeoPS70ApkF2r7pFf1nkt7gEU8SHcNrFE5GUhdZ6TLj_p_EBjjNPt7s8PJNFpIjq0wQwhE-Fp5FYO3-gNSCLvtB3r-0buEEWd9HQrM52-vtwDaeTqYL3au1LGmMA"/>
+</div>
+</section>
+<!-- Divider -->
+<div class="w-full h-px bg-outline/10 my-16 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop"></div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-xl bg-background/90 dark:bg-surface-dim/90 backdrop-blur-xl border-t border-outline/5 shadow-sm shadow-primary/5">
+<div class="flex justify-around items-center h-16 px-margin-mobile">
+<a class="flex flex-col items-center justify-center text-primary font-bold translate-y-[-2px] transition-transform w-1/4" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span class="font-label-sm text-label-sm-mobile">Story</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors w-1/4" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">timeline</span>
+<span class="font-label-sm text-label-sm-mobile">Path</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors w-1/4" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">folder_special</span>
+<span class="font-label-sm text-label-sm-mobile">Works</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors w-1/4" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">chat_bubble</span>
+<span class="font-label-sm text-label-sm-mobile">Connect</span>
+</a>
+</div>
+</nav>
+<!-- Footer -->
+<footer class="w-full py-16 bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline/10 text-primary dark:text-on-secondary-fixed mt-auto pb-24 md:pb-16">
+<div class="flex flex-col items-center gap-8 px-margin-desktop text-center max-w-container-max mx-auto">
+<div class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-secondary-fixed-dim uppercase tracking-widest mb-4">
+                ELARA
+            </div>
+<div class="flex flex-wrap justify-center gap-6 font-label-md text-label-md">
+<a class="text-on-surface-variant/80 hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20 focus:outline-none rounded px-2 py-1" href="#">Instagram</a>
+<a class="text-on-surface-variant/80 hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20 focus:outline-none rounded px-2 py-1" href="#">LinkedIn</a>
+<a class="text-on-surface-variant/80 hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20 focus:outline-none rounded px-2 py-1" href="#">Email</a>
+<a class="text-on-surface-variant/80 hover:text-primary hover:tracking-wider transition-all duration-500 focus:ring-1 focus:ring-primary/20 focus:outline-none rounded px-2 py-1" href="#">Behance</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant/60 mt-4 uppercase tracking-widest text-xs">
+                © 2024 ELARA STUDIOS. CRAFTED WITH INTENTION.
+            </div>
+</div>
+</footer>
+</body></html>
